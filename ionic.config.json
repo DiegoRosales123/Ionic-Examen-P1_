@@ -1,0 +1,10 @@
+{
+  "name": "status bar",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

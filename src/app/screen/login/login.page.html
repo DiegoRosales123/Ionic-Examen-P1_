@@ -1,0 +1,30 @@
+<ion-content class="ion-padding">
+  <div class="flex">
+    <div class="img-flex">
+      <img src="../../assets/logo.png" />
+    </div>
+    <div>
+      <ion-item fill="outline">
+        <ion-label position="floating">Correo Electrónico</ion-label>
+        <!-- Vincula el valor del ion-input con la propiedad 'email' del componente -->
+        <ion-input [(ngModel)]="email" type="email"></ion-input>
+      </ion-item>
+      <div class="margin"></div>
+      <!-- No se vincula la contraseña -->
+      <ion-item fill="outline">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <div class="margin"></div>
+      <ion-button class="btn-login" (click)="login()">INICIAR SESIÓN</ion-button>
+    </div>
+    <!-- Perdiste la Contraseña -->
+    <div class="forgot">
+      <p>Perdiste tu contraseña?</p>
+    </div>
+
+    <div class="footer">
+      No tienes Cuenta? <span routerLink="/SIGNUP">REGISTRARSE</span>
+    </div>
+  </div>
+</ion-content>
